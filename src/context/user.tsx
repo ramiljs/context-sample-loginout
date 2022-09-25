@@ -1,5 +1,5 @@
-import { FC, useContext } from "react";
-import { UserContext } from "./userContext";
+import { FC, useContext } from 'react';
+import { UserContext } from './userContext';
 
 export const User: FC = () => {
   const userContext = useContext(UserContext);
@@ -13,7 +13,7 @@ export const User: FC = () => {
 
   const handleLogout = () => {
     userContext.setUser(null);
-  }
+  };
 
   return (
     <div>
@@ -23,4 +23,4 @@ export const User: FC = () => {
       <div>User email is {userContext.user?.name}</div>
     </div>
   )
-}
+};
