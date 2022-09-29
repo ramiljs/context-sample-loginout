@@ -1,7 +1,7 @@
-import { FC, useContext } from 'react';
-import { UserContext } from './userContext';
+import { FC, useContext } from "react";
+import { UserContext } from "./userContext";
 
-export const User: FC = () => {
+const User: FC = () => {
   const userContext = useContext(UserContext);
 
   const handleLogin = () => {
@@ -24,3 +24,5 @@ export const User: FC = () => {
     </div>
   )
 };
+
+export default User;
