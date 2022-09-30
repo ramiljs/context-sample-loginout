@@ -4,11 +4,7 @@ import { UserContextProvider } from "./context/userContext";
 import { User } from "./context/user";
 
 function App() {
-  return (
-    <UserContextProvider>
-      <User />
-    </UserContextProvider>
-  )
+  return <UserContextProvider> <User /> </UserContextProvider>
 }
 
 export default App;
